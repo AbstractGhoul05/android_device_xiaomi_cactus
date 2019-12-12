@@ -17,12 +17,15 @@
 # Inherit from device
 $(call inherit-product, device/xiaomi/cactus/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Evolution X stuff.
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_BOOT_ANIMATION_RES_EVO := true
+TARGET_GAPPS_ARCH := arm
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := cactus
-PRODUCT_NAME := lineage_cactus
+PRODUCT_NAME := aosp_cactus
 PRODUCT_BRAND := xiaomi
 PRODUCT_MODEL := Redmi 6A
 PRODUCT_MANUFACTURER := Xiaomi
