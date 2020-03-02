@@ -19,7 +19,6 @@ $(call inherit-product, device/xiaomi/cactus/device.mk)
 
 # Inherit some common Evolution X stuff.
 TARGET_BOOT_ANIMATION_RES := 720
-TARGET_BOOT_ANIMATION_RES_EVO := true
 TARGET_GAPPS_ARCH := arm
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
