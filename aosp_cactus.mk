@@ -20,6 +20,7 @@ $(call inherit-product, device/xiaomi/cactus/device.mk)
 # Inherit some common Evolution X stuff.
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_GAPPS_ARCH := arm
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
